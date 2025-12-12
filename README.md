@@ -158,7 +158,15 @@ print("5-fold CV accuracy:", scores.mean(), "+/-", scores.std())
 This appendix documents the methods explored during check-ins and what we learned from them. If a method is central to the project (e.g., Random Forest), details appear above and are referenced here.
 
 ## A0) Dependencies to run 
-- 
+**Core libraries**
+- numpy (numerical arrays)
+- pandas (data loading/cleaning)
+- matplotlib (plots)
+- seaborn (EDA plots)
+
+**Machine learning**
+- scikit-learn (train/test split, preprocessing, models, metrics, cross-validation)
+- torch (PyTorch) / tensorflow
 
 ## A1) EDA & Train/Test Splits - Project Check-in 1
 - Visualized distributions of key audio features

@@ -2,6 +2,7 @@
 
 **Team:** Zachary Joseph, Daniel Hara, Ryan Persico, Zach Smith, Davis Frolich  
 **Course:** CS M148  
+**Github:** https://github.com/d-hara10/cs_m148_final_project/blob/main/README.md
 
 ## 1) Summary
 

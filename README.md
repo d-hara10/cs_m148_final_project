@@ -219,7 +219,6 @@ We tuned or explored the following parameters during development:
 - **K-means k** (cluster count) via inertia/elbow
 - **PCA explained variance threshold** (e.g., 90% variance)
 - **Neural net architecture** (layer sizes, dropout) and training knobs (learning rate, batch size, early stopping)
-- **Random Forest** parameters (e.g., number of trees, depth) — recommended to finalize via cross-validation (Section 8)
 
 
 

@@ -187,6 +187,9 @@ We used Random Forests as both:
 - A strong baseline for binary classification (explicit vs not explicit), including ROC/AUC analysis
 - The main method for multi-class genre classification (Section 6–7)
 
+We did **not** rely on KNN as the final model, because it is sensitive to feature scaling and struggles in higher-dimensional spaces. A single decision tree was used as a simpler baseline; the **Random Forest** performed best and was more stable.
+
+
 Why RF works well here:
 - Nonlinear decision boundaries
 - Strong performance on tabular feature sets

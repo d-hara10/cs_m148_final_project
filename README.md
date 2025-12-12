@@ -1,4 +1,4 @@
-# CS M148 Final Project Report — Genre Classification from Spotify Audio Features
+# CS M148 Final Project Report - Genre Classification from Spotify Audio Features
 
 **Team:** Zachary Joseph, Daniel Hara, Ryan Persico, Zach Smith, Davis Frolich  
 **Course:** CS M148  

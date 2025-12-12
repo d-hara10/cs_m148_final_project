@@ -11,6 +11,11 @@ you chose the key method and its limitations
 
 - v. how to use the code for your project on the data set.
 - 
+
+
+
+
+
 (b) Appendix: In the appendix you will discuss the methods that you applied to reach your final
 project goal from the check-ins. You should use this as a check-list to make sure you discuss all of
 these aspects of your work either in your main report or appendix. If a method is the key method

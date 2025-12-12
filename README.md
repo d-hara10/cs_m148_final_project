@@ -110,22 +110,12 @@ We used a confusion matrix() to identify which genres are most often confused. T
 
 ## 8) Cross-Validation
 
-The project notebook includes a single-train/test split for quick iteration; to produce the final CV numbers for the report, run this (Stratified) K‑fold evaluation in the main notebook and paste the results below:
+**5‑fold CV accuracy (mean ± std):** 
+- We ran **5-fold Stratified cross-validation** on the training split to estimate generalization performance
+`5-fold CV (train) accuracy: 0.720 ± 0.008
+Fold accuracies: [0.718 0.736 0.714 0.714 0.717]`
+- We then trained the final model further on the full test split and reported the hold out accuracy
 
-```python
-from sklearn.model_selection import StratifiedKFold, cross_val_score
-
-X = df_10.drop(columns=["track_genre"])
-y = df_10["track_genre"]
-
-rf = RandomForestClassifier(n_estimators=100, random_state=1)
-cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=1)
-
-scores = cross_val_score(rf, X, y, cv=cv, scoring="accuracy")
-print("5-fold CV accuracy:", scores.mean(), "+/-", scores.std())
-```
-
-**5‑fold CV accuracy (mean ± std):** _<paste here>_
 
 ---
 

@@ -1,49 +1,3 @@
- Report - 50 points
-(a) Main document: Your main document can be a readme explaining
-- iv. results including cross-validation used and evaluation metrics and conclusions such as why
-you chose the key method and its limitations
-- v. how to use the code for your project on the data set.
-- 
-
-Spotify Genre C
-
-Using the [Spotify-Track-Data set](https://huggingface.co/datasets/maharshipandya/spotify-tracks-dataset), we created a genre prediction model that given the features
-
-
-
-(b) Appendix: In the appendix you will discuss the methods that you applied to reach your final
-project goal from the check-ins. You should use this as a check-list to make sure you discuss all of
-these aspects of your work either in your main report or appendix. If a method is the key method
-in the main document, you can just mention that it is discussed in the main document.
-
-- i. Explain the exploratory data analysis that you conducted. What was done to visualize your
-data and split your data for training and testing?
-
-- ii. What data pre-processing and feature engineering (or data augmentation) did you complete
-on your project?
-
-- iii. How was regression analysis applied in your project? What did you learn about your data
-set from this analysis and were you able to use this analysis for feature importance? Was
-regularization needed?
-
-- iv. How was logistic regression analysis applied in your project? What did you learn about your
-data set from this analysis and were you able to use this analysis for feature importance?
-Was regularization needed?
-
-- v. How were KNN, decision trees, or random forest used for classification on your data? What
-method worked best for your data and why was it good for the problem you were addressing?
-
-- vi. How were PCA and clustering applied on your data? What method worked best for your
-data and why was it good for the problem you were addressing?
-
-- vii. Explain how your project attempted to use a neural network on the data and the results of
-that attempt.
-
-- viii. Give examples of hyperparameter tuning that you applied in preparing your project and ho
-you chose the best parameters for models.
-
-
-
 # CS M148 Final Project Report — Genre Classification from Spotify Audio Features
 
 **Team:** Zachary Joseph, Daniel Hara, Ryan Persico, Zach Smith, Davis Frolich  
@@ -203,7 +157,10 @@ print("5-fold CV accuracy:", scores.mean(), "+/-", scores.std())
 
 This appendix documents the methods explored during check-ins and what we learned from them. If a method is central to the project (e.g., Random Forest), details appear above and are referenced here.
 
-## A1) EDA & Train/Test Splits
+## A0) Dependencies to run 
+- 
+
+## A1) EDA & Train/Test Splits - Project Check-in 1
 - Visualized distributions of key audio features
 - Checked missingness and invalid rows
 - Used stratified holdout splits for classification tasks

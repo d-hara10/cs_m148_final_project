@@ -1,8 +1,5 @@
  Report - 50 points
 (a) Main document: Your main document can be a readme explaining
-- i. the data set your team used
-- ii. the overview of the problem your team addressed
-- iii. the key methodology that worked to address the problem with explanations as to why
 - iv. results including cross-validation used and evaluation metrics and conclusions such as why
 you chose the key method and its limitations
 - v. how to use the code for your project on the data set.
@@ -49,12 +46,12 @@ you chose the best parameters for models.
 
 # CS M148 Final Project Report — Genre Classification from Spotify Audio Features
 
-**Team:** _<Zachary Joseph, Daniel Hara, Ryan Persico, Zach Smith, Davis Frolich>_  
+**Team:** Zachary Joseph, Daniel Hara, Ryan Persico, Zach Smith, Davis Frolich  
 **Course:** CS M148  
 
 ## 1) Summary
 
-We built a supervised learning pipeline to **classify a song’s genre** from Spotify audio features (e.g., danceability, energy, acousticness). Because the raw dataset contains **114 genres**, we scoped the final task to a **balanced 10‑genre classification problem** to keep the label space learnable and the evaluation interpretable.
+We developed a supervised learning pipeline to **classify a song’s genre** from Spotify audio features (e.g., danceability, energy, acousticness). Because the raw dataset contains **114 genres**, we scoped the final task to a **balanced 10‑genre classification problem** to keep the label space learnable and the evaluation interpretable.
 
 Our best-performing approach in this project was a **Random Forest classifier** trained on standardized cleaned audio features, which achieved **~0.74 test accuracy** on the 10‑genre task.
 
@@ -151,13 +148,14 @@ We chose a Random Forest because it:
 | Neural Network (2 hidden layers + dropout) | 10‑genre | 85/15 | Standardized inputs + early stopping | 0.657 |
 
 ### Error analysis
-We used a confusion matrix to identify which genres are most often confused. The most frequent confusions appear between genres with similar audio profiles (e.g., some overlap between pop/rock/electronic-style features), while more distinct genres (e.g., classical) tend to be easier.
+We used a confusion matrix() to identify which genres are most often confused. The most frequent confusions appear between genres with similar audio profiles (e.g., some overlap between pop/rock/electronic-style features), while more distinct genres (e.g., classical) tend to be easier.
+<img width="928" height="855" alt="image" src="https://github.com/user-attachments/assets/2e1b5c05-5a2f-49f7-91a5-dc2737926efc" />
 
 ---
 
-## 8) Cross-Validation (Required)
+## 8) Cross-Validation
 
-The spec requires reporting **cross-validation**. The project notebook includes a single-train/test split for quick iteration; to produce the final CV numbers for the report, run this (Stratified) K‑fold evaluation in the main notebook and paste the results below:
+The project notebook includes a single-train/test split for quick iteration; to produce the final CV numbers for the report, run this (Stratified) K‑fold evaluation in the main notebook and paste the results below:
 
 ```python
 from sklearn.model_selection import StratifiedKFold, cross_val_score
